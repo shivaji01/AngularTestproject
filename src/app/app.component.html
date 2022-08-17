@@ -1,0 +1,82 @@
+
+
+<!-- <app-login></app-login> -->
+<!-- //<app-loginverify></app-loginverify> -->
+<!-- <app-root></app-root> -->
+
+
+<!-- interpolation  -->
+<!-- {{title}} -->
+
+
+<!-- Event binding -->
+<!-- <label>First name</label>
+<input type="text" placeholder="Enter first name">
+<button (click)="Onsubmit()">submit</button> -->
+
+
+<!-- property binding -->
+<!-- <label>First name</label>
+<input type="text" placeholder="Enter first name" #enablebutton>
+<button [disabled]="buttonenable" (click)="Onsubmit()" >submit</button> -->
+
+
+<!-- template refrence variable -->
+<!-- <input type="text" placeholder="Enter first name" #textref>
+<button (click)="Onsubmitclick(textref.value)">submit</button> -->
+
+
+<!-- *ngif -->
+<!-- <div *ngIf="monday; else  eloseblck">
+    today is monday..
+</div>
+<ng-template #eloseblck>
+    <div>
+        today is not monday..
+    </div>
+</ng-template> -->
+
+
+<!-- *ngforof  -->
+<!-- <div>
+    <table>
+        <Tr>
+            <th>SrNo</th>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Address</th>
+            <th>MobileNo</th>
+        </Tr>
+        <tr *ngFor="let item of StudentDetails; index as i">
+            <td>{{i+1}}</td>
+            <td>{{item.Firstname}}</td>
+            <td>{{item.Lastname}}</td>
+            <td>{{item.Address}}</td>
+            <td>{{item.MobileNo}}</td>
+        </tr>
+    </table>
+</div> -->
+
+
+<!-- <app-login></app-login>
+<app-loginverify></app-loginverify>
+<app-loginerror></app-loginerror> -->
+<!-- <app-child></app-child>
+<app-parent></app-parent>
+<app-loginverify></app-loginverify>
+<app-login></app-login> -->
+
+<!-- <app-parent></app-parent>
+<app-pipe></app-pipe>-->
+<!-- inbuild directive - ngStyle-->
+<!-- <div [ngStyle]="mystyle">inbuild directive</div> -->
+<!-- inbuild directive -->
+<!-- <app-forms></app-forms> -->
+
+
+<!-- <app-login></app-login> -->
+<app-navbar></app-navbar>
+<!-- <app-loginverify></app-loginverify> -->
+<!-- <router-outlet></router-outlet> -->
+
+<router-outlet></router-outlet>

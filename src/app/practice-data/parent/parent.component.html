@@ -1,0 +1,16 @@
+<p>parent works!</p>
+<!-- input  -->
+<div>hi....massage from parent </div>
+<!-- <app-child [data1]="MobileNo"></app-child> -->
+<!-- input  -->
+
+
+<!-- output -->
+{{displaymsgofchild}}
+<app-child [data1]="MobileNo" (newmsgout)="Getmsgfromchild($event)"></app-child>
+<!-- output -->
+
+
+<!-- inbuild directive -->
+<div [ngStyle]="mystyle">hello from angular to inbuild directive</div>
+<!-- inbuild directive -->

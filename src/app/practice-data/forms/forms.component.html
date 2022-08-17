@@ -1,0 +1,44 @@
+<p>forms works!</p>
+<!-- <div class="formstylecustom" >
+    <h3 class="fontsize">Login Form</h3>
+<form #login1="ngForm" (ngSubmit)="Onsubmitclick(login1.value)">
+    <div class="form-group">
+        <label>Uername:</label>
+        <input [(ngModel)]="uname" class="form-control" name="username" #username="ngModel" required minlength="3">
+    
+    <div [hidden]="username.valid || username.pristine" class="alert alert danger">
+        username is required</div></div>
+    <div class="form-group">
+        <label>Password:</label>
+        <input [(ngModel)]="password" class="=form-control" name="password" #password1="ngModel" required minlength="5">
+    </div>
+    <div [hidden]="password1.valid || password1.pristine" class="alert alert danger">
+        Password is required</div>
+    <button>Submit</button>
+    <button (click)="login1.reset()">Reset</button>
+</form>
+</div>
+<div>Username:{{username.value}}</div>
+<div>Form details: {{login1.value | json}}</div>
+<div>
+  <img [src]="imagefetch" [ngStyle]="imagestyle"> 
+</div> -->
+<form #newtempform="ngForm" (submit)="adddata(newtempform)">
+    <label>Username</label>
+    <input type="text" [(ngModel)]="firstname" name="username">
+    <br>
+    <label>Password</label>
+    <input type="text" [(ngModel)]="password" name="password" required minlength="5">
+    <br>
+    <input type="checkbox" [(ngModel)]="term" name="term" required>I accept term and conditions..
+    <br>
+   <select [(ngModel)]="dropdown" name="dropdown">
+    <option value="1">Premium</option>
+    <option value="2">Standerd</option>
+   </select>
+<button type="submit" [disabled]="!newtempform.valid">Add data</button>
+<button (click)="resetvalue(newtempform)">Reset form</button>
+</form>
+
+
+{{firstname}}
